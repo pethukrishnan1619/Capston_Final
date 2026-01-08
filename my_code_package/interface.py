@@ -75,5 +75,5 @@ def launch_demo(handle_query: Callable[[str], Any]) -> None:
     demo = build_interface(handle_query)
     port = int(os.environ.get("PORT", 7860))
     # Launch the demo; in a cloud environment (e.g. Render), `inbrowser` should be False
-    # demo.launch(server_name="0.0.0.0", server_port=port)
-    demo.launch(server_name="127.0.0.1", server_port=port, inbrowser=True)
+    demo.launch(server_name="0.0.0.0", server_port=port)
+    # demo.launch(server_name="127.0.0.1", server_port=port, inbrowser=True)
