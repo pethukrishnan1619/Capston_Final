@@ -1,0 +1,14 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+env/
+venv/
+.env
+
+# # Ignore FAISS index and other runtime files
+# faiss_store/
+# *.faiss
+# *.pkl
+
+# Ignore Jupyter notebooks checkpoints
+.ipynb_checkpoints/
